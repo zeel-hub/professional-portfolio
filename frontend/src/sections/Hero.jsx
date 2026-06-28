@@ -31,6 +31,14 @@ export const Hero = () => {
             {profile.location}
           </motion.div>
 
+          <motion.p
+            {...m(0.09)}
+            className="mb-2 font-display text-base font-semibold tracking-tight text-ink-2"
+            data-testid="hero-name"
+          >
+            {profile.name} · {profile.roles[0]}
+          </motion.p>
+
           <motion.h1
             {...m(0.12)}
             className="font-display text-4xl font-semibold leading-[1.07] tracking-tight sm:text-5xl lg:text-6xl"

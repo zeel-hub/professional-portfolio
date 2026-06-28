@@ -12,7 +12,7 @@ export const profile = {
   email: "0210zeel@gmail.com",
   linkedin: "https://www.linkedin.com/in/zeel-patel-4a19491a7/",
   photo:
-    "https://customer-assets.emergentagent.com/job_zeel-craft/artifacts/qoi708wr_image.png",
+    "https://customer-assets.emergentagent.com/job_zeel-craft/artifacts/wpajg5rg_image.png",
   resumeUrl:
     "https://customer-assets.emergentagent.com/job_zeel-craft/artifacts/nt6zmrad_ZeelPatel_Resume_SeniorQE.pdf",
   headline: "I build automation that makes engineering teams faster.",
