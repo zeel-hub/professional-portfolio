@@ -202,6 +202,10 @@ export const projects = [
     tagline:
       "An internal web app that turns MPEG transport-stream management into point-and-click instead of SSH.",
     stack: ["Python", "Flask", "Linux", "NGINX", "Gunicorn", "JavaScript"],
+    screenshots: [
+      "https://customer-assets.emergentagent.com/job_zeel-craft/artifacts/srxfqhmi_image.png",
+      "https://customer-assets.emergentagent.com/job_zeel-craft/artifacts/o8o1rgp3_image.png",
+    ],
     overview:
       "An internal web application that simplifies transport-stream (TS) management and testing for engineering and QA teams — replacing command-line workflows with a clean, centralized interface.",
     problem:
