@@ -55,6 +55,7 @@ export const WebProjectCard = ({ project, index = 0 }) => {
           tabIndex={-1}
           aria-hidden="true"
           scrolling="no"
+          sandbox="allow-scripts allow-same-origin"
           className="absolute left-0 top-0 origin-top-left"
           style={{
             width: "1200px",
