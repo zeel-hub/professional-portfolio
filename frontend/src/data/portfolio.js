@@ -164,6 +164,9 @@ export const projects = [
     tagline:
       "Centralized, real-time visibility into the health and performance of engineering test systems.",
     stack: ["Python", "Linux", "System Metrics", "Dashboards", "Log Analysis"],
+    screenshots: [
+      "https://customer-assets.emergentagent.com/job_zeel-craft/artifacts/h0699v0g_image.png",
+    ],
     overview:
       "A centralized monitoring application that gives QA and engineering teams real-time visibility into lab infrastructure through a single, intuitive dashboard.",
     problem:
