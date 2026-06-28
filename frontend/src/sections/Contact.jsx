@@ -1,6 +1,6 @@
 import { Section } from "../components/Section";
 import { profile } from "../data/portfolio";
-import { downloadResume } from "../components/Navbar";
+import { requestResume } from "../components/Navbar";
 import { Mail, Linkedin, FileText, Phone } from "lucide-react";
 
 export const Contact = () => (
@@ -53,12 +53,12 @@ export const Contact = () => (
           LinkedIn
         </a>
         <button
-          onClick={downloadResume}
-          data-testid="contact-resume"
+          onClick={requestResume}
+          data-testid="contact-request-resume"
           className="btn-press inline-flex items-center gap-2 rounded-full border border-border bg-bg-2 px-5 py-3 text-sm font-semibold hover:bg-bg-3"
         >
           <FileText className="h-4 w-4" />
-          Resume
+          Request Resume
         </button>
       </div>
     </div>

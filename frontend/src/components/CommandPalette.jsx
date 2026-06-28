@@ -23,7 +23,7 @@ import {
   Linkedin,
   AppWindow,
 } from "lucide-react";
-import { scrollToSection, downloadResume } from "./Navbar";
+import { scrollToSection, requestResume } from "./Navbar";
 import { projects, profile } from "../data/portfolio";
 
 const sectionItems = [
@@ -87,9 +87,9 @@ export const CommandPalette = ({ open, setOpen }) => {
             )}
             Toggle theme
           </CommandItem>
-          <CommandItem data-testid="command-resume" onSelect={() => run(downloadResume)}>
+          <CommandItem data-testid="command-request-resume" onSelect={() => run(requestResume)}>
             <FileText className="mr-2 h-4 w-4" />
-            Download resume
+            Request resume
           </CommandItem>
           <CommandItem
             data-testid="command-linkedin"

@@ -1,10 +1,9 @@
 import { useEffect, useState, useCallback } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { Command, FileText } from "lucide-react";
+import { Command, Mail } from "lucide-react";
 import { TrafficLights } from "./TrafficLights";
 import { ThemeToggle } from "./ThemeToggle";
 import { profile } from "../data/portfolio";
-import { toast } from "sonner";
 
 const navItems = [
   { id: "home", label: "Home" },
@@ -29,19 +28,12 @@ export const scrollToSection = (id, navigate, pathname) => {
   }
 };
 
-export const downloadResume = () => {
-  if (!profile.resumeUrl) {
-    toast("Resume coming soon", {
-      description: "Add a link in the data file to enable download.",
-    });
-    return;
-  }
-  const a = document.createElement("a");
-  a.href = profile.resumeUrl;
-  a.download = "Zeel_Patel_Resume.pdf";
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
+export const requestResume = () => {
+  const subject = encodeURIComponent("Resume request");
+  const body = encodeURIComponent(
+    "Hi Zeel,\n\nI came across your portfolio and would like to request a copy of your resume.\n\nThanks!"
+  );
+  window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
 };
 
 export const Navbar = ({ onOpenPalette }) => {
@@ -124,12 +116,12 @@ export const Navbar = ({ onOpenPalette }) => {
           </button>
           <ThemeToggle />
           <button
-            data-testid="resume-button"
-            onClick={downloadResume}
+            data-testid="request-resume-button"
+            onClick={requestResume}
             className="btn-press flex h-9 items-center gap-1.5 rounded-full bg-blue px-4 text-sm font-semibold text-white shadow-soft hover:opacity-90"
           >
-            <FileText className="h-4 w-4" />
-            <span className="hidden sm:inline">Resume</span>
+            <Mail className="h-4 w-4" />
+            <span className="hidden whitespace-nowrap sm:inline">Request Resume</span>
           </button>
         </div>
       </div>

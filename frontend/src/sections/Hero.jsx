@@ -2,7 +2,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import { useNavigate, useLocation } from "react-router-dom";
 import { ArrowRight, Linkedin, Mail, MapPin } from "lucide-react";import { profile } from "../data/portfolio";
 import { HeroIllustration } from "../components/HeroIllustration";
-import { scrollToSection, downloadResume } from "../components/Navbar";
+import { scrollToSection, requestResume } from "../components/Navbar";
 
 const fade = (delay) => ({
   initial: { opacity: 0, y: 18 },
@@ -63,11 +63,11 @@ export const Hero = () => {
               <ArrowRight className="h-4 w-4" />
             </button>
             <button
-              data-testid="hero-download-resume"
-              onClick={downloadResume}
+              data-testid="hero-request-resume"
+              onClick={requestResume}
               className="btn-press inline-flex items-center gap-2 rounded-full border border-border bg-bg-2 px-6 py-3 text-sm font-semibold text-ink hover:bg-bg-3"
             >
-              Download Resume
+              Request Resume
             </button>
             <button
               data-testid="hero-contact"
