@@ -17,7 +17,7 @@ export const profile = {
   resumeUrl: "/Zeel_Patel_Resume.pdf",
   headline: "I build automation that makes engineering teams faster.",
   subhead:
-    "I'm an AI-native Quality Engineer who builds the internal tools that make QA teams faster — not just the test suites. At Evertz I've shipped automation tools now woven into daily QA workflows, from firmware deployment to AI-assisted defect triage.",
+    "I help engineering teams ship faster and with more confidence by turning slow, manual workflows into reliable automation. With a strong foundation in Python, testing, and modern tooling, I build internal tools that improve quality, save time, and make everyone around me more productive.",
   summary:
     "I'm a Quality Engineer who builds the tools that make QA teams faster, not just the test suites. At Evertz Microsystems I developed four internal automation tools — a JIRA AI triage agent, a lab monitoring dashboard, the TSPLAY web UI, and a firmware upgrade tool — that are now part of daily QA workflows. I work deep in Python automation, ETL and database validation, and shift-left testing, with full-stack instincts across Flask, CI/CD pipelines, and REST API frameworks. I care about automation engineering and AI-assisted quality strategy that creates measurable engineering impact.",
 };
