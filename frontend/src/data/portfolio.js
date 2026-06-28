@@ -3,7 +3,7 @@
 export const profile = {
   name: "Zeel Patel",
   roles: [
-    "Senior Quality Engineer",
+    "Quality Engineer",
     "Automation Engineer",
     "Software Test Engineer",
     "Python Developer",
@@ -17,9 +17,9 @@ export const profile = {
     "https://customer-assets.emergentagent.com/job_zeel-craft/artifacts/nt6zmrad_ZeelPatel_Resume_SeniorQE.pdf",
   headline: "I build automation that makes engineering teams faster.",
   subhead:
-    "I'm an AI-native Senior Quality Engineer who builds the internal tools that make QA teams faster — not just the test suites. At Evertz I've shipped automation tools now woven into daily QA workflows, from firmware deployment to AI-assisted defect triage.",
+    "I'm an AI-native Quality Engineer who builds the internal tools that make QA teams faster — not just the test suites. At Evertz I've shipped automation tools now woven into daily QA workflows, from firmware deployment to AI-assisted defect triage.",
   summary:
-    "I'm a Senior Quality Engineer who builds the tools that make QA teams faster, not just the test suites. At Evertz Microsystems I developed four internal automation tools — a JIRA AI triage agent, a lab monitoring dashboard, the TSPLAY web UI, and a firmware upgrade tool — that are now part of daily QA workflows. I work deep in Python automation, ETL and database validation, and shift-left testing, with full-stack instincts across Flask, CI/CD pipelines, and REST API frameworks. I care about automation engineering and AI-assisted quality strategy that creates measurable engineering impact.",
+    "I'm a Quality Engineer who builds the tools that make QA teams faster, not just the test suites. At Evertz Microsystems I developed four internal automation tools — a JIRA AI triage agent, a lab monitoring dashboard, the TSPLAY web UI, and a firmware upgrade tool — that are now part of daily QA workflows. I work deep in Python automation, ETL and database validation, and shift-left testing, with full-stack instincts across Flask, CI/CD pipelines, and REST API frameworks. I care about automation engineering and AI-assisted quality strategy that creates measurable engineering impact.",
 };
 
 export const philosophy = [
@@ -43,7 +43,7 @@ export const philosophy = [
 
 export const experience = [
   {
-    role: "Senior Quality Engineer",
+    role: "Quality Engineer",
     company: "Evertz Microsystems Ltd.",
     period: "Jan 2023 — Present",
     location: "Burlington, ON",
