@@ -43,7 +43,16 @@ export const Projects = () => {
             {/* screenshot preview */}
             <div className="h-52 overflow-hidden">
               <div className="h-full w-full transition-transform duration-700 ease-out group-hover:scale-[1.04]">
-                <ProjectPreview project={p} />
+                {p.screenshots ? (
+                  <img
+                    src={p.screenshots[0]}
+                    alt={`${p.name} preview`}
+                    className="h-full w-full bg-bg-3 object-cover object-top"
+                    loading="lazy"
+                  />
+                ) : (
+                  <ProjectPreview project={p} />
+                )}
               </div>
             </div>
 

@@ -119,7 +119,16 @@ export default function ProjectDetail() {
           </span>
         </div>
         <div className="h-72 sm:h-80">
-          <ProjectPreview project={project} />
+          {project.screenshots ? (
+            <img
+              src={project.screenshots[0]}
+              alt={`${project.name} screenshot`}
+              className="h-full w-full bg-bg-3 object-cover object-top"
+              loading="lazy"
+            />
+          ) : (
+            <ProjectPreview project={project} />
+          )}
         </div>
       </motion.div>
 
@@ -139,6 +148,32 @@ export default function ProjectDetail() {
             ))}
           </div>
         </Block>
+        {project.screenshots && (
+          <div className="border-t border-border pt-8">
+            <h2 className="font-display text-sm font-semibold uppercase tracking-[0.16em] text-ink-3">
+              Screenshots
+            </h2>
+            <div className="mt-5 grid gap-5">
+              {project.screenshots.map((src, i) => (
+                <figure
+                  key={i}
+                  data-testid={`project-screenshot-${i}`}
+                  className="surface overflow-hidden rounded-2xl shadow-soft"
+                >
+                  <div className="flex items-center gap-2 border-b border-border px-3 py-2">
+                    <TrafficLights />
+                  </div>
+                  <img
+                    src={src}
+                    alt={`${project.name} screenshot ${i + 1}`}
+                    className="w-full bg-bg-3 object-contain"
+                    loading="lazy"
+                  />
+                </figure>
+              ))}
+            </div>
+          </div>
+        )}
         <Block title="Challenges">
           <List items={project.challenges} />
         </Block>

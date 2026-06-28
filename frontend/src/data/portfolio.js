@@ -124,6 +124,11 @@ export const projects = [
     tagline:
       "A Python desktop app that automates firmware deployment and hardware inventory across device fleets.",
     stack: ["Python", "Linux", "SSH", "Concurrency", "Tkinter", "JSON"],
+    screenshots: [
+      "https://customer-assets.emergentagent.com/job_zeel-craft/artifacts/10yhmpnl_image.png",
+      "https://customer-assets.emergentagent.com/job_zeel-craft/artifacts/myce5oj2_image.png",
+      "https://customer-assets.emergentagent.com/job_zeel-craft/artifacts/iuph7ttg_image.png",
+    ],
     overview:
       "A Python-based desktop application that automates firmware deployment and hardware inventory collection across many devices in engineering test environments — cutting manual effort and standardizing a previously fragile process.",
     problem:
