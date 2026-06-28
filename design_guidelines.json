@@ -1,0 +1,160 @@
+{
+  "theme": "dark",
+  "archetype": "Apple Glass/Pro",
+  "colors": {
+    "dark": {
+      "background_primary": "hsl(0, 0%, 9%)",
+      "background_secondary": "hsl(0, 0%, 12%)",
+      "background_tertiary": "hsl(0, 0%, 16%)",
+      "text_primary": "hsl(0, 0%, 100%)",
+      "text_secondary": "hsl(0, 0%, 65%)",
+      "text_tertiary": "hsl(0, 0%, 45%)",
+      "border_soft": "hsla(0, 0%, 100%, 0.1)",
+      "border_strong": "hsla(0, 0%, 100%, 0.2)",
+      "glass_background": "hsla(0, 0%, 12%, 0.65)"
+    },
+    "light": {
+      "background_primary": "hsl(0, 0%, 98%)",
+      "background_secondary": "hsl(0, 0%, 95%)",
+      "background_tertiary": "hsl(0, 0%, 92%)",
+      "text_primary": "hsl(0, 0%, 10%)",
+      "text_secondary": "hsl(0, 0%, 40%)",
+      "text_tertiary": "hsl(0, 0%, 60%)",
+      "border_soft": "hsla(0, 0%, 0%, 0.08)",
+      "border_strong": "hsla(0, 0%, 0%, 0.15)",
+      "glass_background": "hsla(0, 0%, 100%, 0.7)"
+    },
+    "accents": {
+      "apple_blue": "#0A84FF",
+      "soft_lavender": "#AF52DE",
+      "soft_indigo": "#5E5CE6",
+      "muted_mint": "#66D4CF",
+      "traffic_red": "#FF5F56",
+      "traffic_yellow": "#FFBD2E",
+      "traffic_green": "#27C93F"
+    }
+  },
+  "typography": {
+    "font_family": {
+      "headings": "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif",
+      "body": "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif",
+      "mono": "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace"
+    },
+    "scale": {
+      "h1": { "size": "clamp(3rem, 5vw, 4.5rem)", "weight": "700", "tracking": "-0.04em", "line_height": "1.1" },
+      "h2": { "size": "clamp(2rem, 3vw, 3rem)", "weight": "600", "tracking": "-0.03em", "line_height": "1.2" },
+      "h3": { "size": "1.5rem", "weight": "600", "tracking": "-0.02em", "line_height": "1.3" },
+      "body": { "size": "1.125rem", "weight": "400", "tracking": "-0.01em", "line_height": "1.6" },
+      "small": { "size": "0.875rem", "weight": "400", "tracking": "0", "line_height": "1.5" },
+      "caption": { "size": "0.75rem", "weight": "500", "tracking": "0.02em", "line_height": "1.4" }
+    }
+  },
+  "spacing": {
+    "section_gap": "8rem",
+    "component_gap": "2rem",
+    "card_padding": "2rem",
+    "button_padding": "0.75rem 1.5rem",
+    "chip_padding": "0.5rem 1rem"
+  },
+  "materials": {
+    "glass_heavy": {
+      "backdrop_filter": "blur(24px) saturate(1.2)",
+      "background_dark": "hsla(0, 0%, 12%, 0.65)",
+      "background_light": "hsla(0, 0%, 100%, 0.75)",
+      "border_dark": "1px solid hsla(0, 0%, 100%, 0.1)",
+      "border_light": "1px solid hsla(0, 0%, 0%, 0.08)"
+    },
+    "shadows": {
+      "dark_mode": {
+        "sm": "0 4px 12px hsla(0, 0%, 0%, 0.4)",
+        "md": "0 8px 24px hsla(0, 0%, 0%, 0.5)",
+        "lg": "0 16px 40px hsla(0, 0%, 0%, 0.6), 0 0 0 1px hsla(0,0%,100%,0.05)"
+      },
+      "light_mode": {
+        "sm": "0 4px 12px hsla(0, 0%, 0%, 0.05)",
+        "md": "0 8px 24px hsla(0, 0%, 0%, 0.08)",
+        "lg": "0 16px 40px hsla(0, 0%, 0%, 0.12), 0 0 0 1px hsla(0,0%,0%,0.02)"
+      }
+    }
+  },
+  "components": {
+    "floating_navbar": {
+      "layout": "fixed top-6 left-1/2 -translate-x-1/2 rounded-full z-50 px-6 py-3 flex items-center justify-between gap-8",
+      "material": "glass_heavy",
+      "elements": [
+        "macOS traffic lights on far left (3 circles 12px each, red/yellow/green, gap 8px)",
+        "Center navigation links with subtle hover state (opacity 0.6 -> 1)",
+        "Right side: Theme toggle and Resume button (pill shape)"
+      ]
+    },
+    "macos_window_card": {
+      "layout": "rounded-xl overflow-hidden flex flex-col relative",
+      "material": "background_secondary + border_soft + shadow_lg",
+      "header": "h-10 border-b border-white/5 flex items-center px-4 bg-white/5",
+      "header_elements": "Traffic lights on left, title centered in text-xs text_secondary font-medium tracking-wide",
+      "body": "p-6 flex flex-col gap-4 relative",
+      "hover_effect": "Transform translate-y-[-4px], elevate shadow to shadow_xl, transition 0.4s cubic-bezier(0.16, 1, 0.3, 1)"
+    },
+    "skill_chips": {
+      "layout": "inline-flex items-center rounded-full text-sm font-medium",
+      "style": "bg-white/5 border border-white/10 text-white/80 hover:bg-white/10 hover:text-white transition-colors",
+      "padding": "px-4 py-1.5"
+    },
+    "command_palette": {
+      "trigger": "Cmd+K keyboard shortcut",
+      "layout": "Fixed centered modal, max-w-lg w-full rounded-xl overflow-hidden shadow-2xl",
+      "material": "glass_heavy",
+      "style": "Apple Spotlight search feel, large input text, list of commands with icons"
+    }
+  },
+  "animations": {
+    "durations": {
+      "fast": "150ms",
+      "normal": "300ms",
+      "slow": "500ms"
+    },
+    "easings": {
+      "apple_spring": "cubic-bezier(0.25, 1, 0.5, 1)",
+      "smooth_out": "cubic-bezier(0.16, 1, 0.3, 1)"
+    },
+    "interactions": {
+      "button_press": "scale(0.97)",
+      "card_hover": "translateY(-4px) scale(1.01)",
+      "image_zoom": "scale(1.05) over 10s ease-out",
+      "fade_in_up": "opacity 0 -> 1, translateY 20px -> 0"
+    }
+  },
+  "media": {
+    "images": [
+      {
+        "category": "hero_background",
+        "url": "https://images.unsplash.com/photo-1620121692029-d088224ddc74?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGRhcmslMjBncmFkaWVudCUyMGdsYXNzJTIwdGV4dHVyZSUyMG1hY29zJTIwd2FsbHBhcGVyfGVufDB8fHx8MTc4MjYwOTI5NXww&ixlib=rb-4.1.0&q=85",
+        "description": "Deep blue and purple flowing shapes, macOS Monterey/Sequoia style abstract wallpaper",
+        "placement_instructions": "Use as a subtle blurred ambient background behind the hero section"
+      },
+      {
+        "category": "about_profile",
+        "url": "https://images.unsplash.com/photo-1767127209423-2ac69b95971c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjBwb3J0cmFpdCUyMG5ldXRyYWwlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc4MjYwOTI5NHww&ixlib=rb-4.1.0&q=85",
+        "description": "Professional developer portrait",
+        "placement_instructions": "Use in the About section inside a rounded-xl container with subtle border"
+      },
+      {
+        "category": "project_thumbnail_1",
+        "url": "https://images.unsplash.com/photo-1599837565318-67429bde7162?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjBjb2RpbmclMjBkYXJrJTIwb2ZmaWNlfGVufDB8fHx8MTc4MjYwOTI3NXww&ixlib=rb-4.1.0&q=85",
+        "description": "Dark IDE coding screen",
+        "placement_instructions": "Use as screenshot placeholder inside macOS window cards for projects"
+      },
+      {
+        "category": "project_thumbnail_2",
+        "url": "https://images.unsplash.com/photo-1645724298070-c30a506ec96f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGJsdXIlMjBzb2Z0JTIwbGlnaHRpbmclMjBkYXJrJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3ODI2MDkyOTR8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Dark blurred abstract lighting",
+        "placement_instructions": "Use as a background cover for project case study headers"
+      }
+    ]
+  },
+  "overall_composition": {
+    "grid": "Bento grid inspired, asymmetrical, max-w-6xl mx-auto px-6",
+    "philosophy": "Negative space is a feature. Do not cram elements. Use 8rem margins between major sections. Text blocks should be narrow (max-w-prose) for comfortable reading.",
+    "testing_attributes": "All interactive elements (nav links, buttons, project cards, theme toggles, command palette items) MUST include a kebab-cased `data-testid` attribute reflecting their role."
+  }
+}
