@@ -241,6 +241,9 @@ export const projects = [
     tagline:
       "Scripts that automatically generate and run API test cases to expand coverage and speed up regression.",
     stack: ["Python", "REST APIs", "Automation", "CI/CD", "Pytest"],
+    screenshots: [
+      "https://customer-assets.emergentagent.com/job_zeel-craft/artifacts/uteu5abj_image.png",
+    ],
     overview:
       "A framework that automatically generates and executes API test cases, expanding coverage and enabling consistent validation across different system configurations.",
     problem:
