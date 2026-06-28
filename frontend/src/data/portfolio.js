@@ -10,6 +10,7 @@ export const profile = {
   ],
   location: "Ontario, Canada",
   email: "0210zeel@gmail.com",
+  phone: "+1 647 540 5725",
   linkedin: "https://www.linkedin.com/in/zeel-patel-4a19491a7/",
   photo:
     "https://customer-assets.emergentagent.com/job_zeel-craft/artifacts/wpajg5rg_image.png",

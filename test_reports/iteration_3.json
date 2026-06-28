@@ -1,0 +1,36 @@
+{
+  "summary": "Bug-fix verification: Resume button now triggers an actual file download (not a new-tab open) across ALL 4 entry points. Validated with Playwright page.expect_download + DOM-level anchor click interception + network request capture + window.open monkey-patch on https://zeel-craft.preview.emergentagent.com. All 4 triggers PASS.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": ["/app/test_reports/iteration_3.json"],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Navbar.jsx downloadResume() correctly fetches the PDF as a blob and triggers a programmatic <a download> click. Implementation is clean and matches the bug-fix intent.",
+    "Catch-block fallback in downloadResume() still sets a.target='_blank' which would re-introduce the original bug if the blob fetch ever fails (e.g., CORS regression). Since the cross-origin PDF currently returns proper CORS headers this is fine, but consider removing target='_blank' from the fallback to guarantee a download attempt without a new-tab side effect.",
+    "Dead 'Resume coming soon' toast branch in downloadResume() is unreachable because profile.resumeUrl is always populated — safe to remove for cleanliness (carry-over note from iteration_2)."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (skipped per request)", "frontend": "100% (4/4 resume entry points PASS)"},
+  "test_credentials": "None — frontend-only static site, no auth.",
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Resume download bug-fix fully verified. For each of the 4 triggers (data-testid: resume-button, hero-download-resume, contact-resume, command-resume) the following was observed: (1) Playwright page.expect_download fired with suggested_filename='Zeel_Patel_Resume.pdf' and url starting with blob:https://zeel-craft.preview.emergentagent.com/; (2) exactly 1 network request to .../nt6zmrad_ZeelPatel_Resume_SeniorQE.pdf; (3) a programmatic <a download='Zeel_Patel_Resume.pdf'> click with target=null (NOT '_blank'); (4) zero window.open calls; (5) zero new tabs opened; (6) no 'Resume coming soon' toast. Zero portfolio-related console errors observed during the resume interactions (only the usual 3rd-party iframe noise from prior iterations remains). Command palette was opened via the 'open-command-palette' button (Cmd+K also works) before clicking command-resume.",
+  "verified_checks": {
+    "navbar_resume_button_downloads_pdf": true,
+    "hero_download_resume_downloads_pdf": true,
+    "contact_resume_downloads_pdf": true,
+    "command_palette_resume_downloads_pdf": true,
+    "filename_is_Zeel_Patel_Resume_pdf": true,
+    "pdf_url_fetched_as_blob": true,
+    "no_new_tab_opened": true,
+    "no_window_open_called": true,
+    "no_coming_soon_toast": true,
+    "no_portfolio_console_errors": true
+  },
+  "rca of the issue": "Original bug: clicking Resume opened the PDF in a new tab via window.open / <a target='_blank'>, never triggering a download. Fix (verified): Navbar.jsx::downloadResume() now (a) async-fetches profile.resumeUrl, (b) converts the response to a Blob and a blob: object URL, (c) programmatically clicks a temporary <a href=blob:... download='Zeel_Patel_Resume.pdf'> with target=null, (d) revokes the object URL. The browser treats this as a same-origin blob download regardless of the original cross-origin PDF host, so the download is triggered reliably. Verified via Playwright's download event AND DOM-level anchor interception across all 4 entry points (resume-button, hero-download-resume, contact-resume, command-resume)."
+}

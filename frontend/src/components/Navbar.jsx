@@ -29,13 +29,35 @@ export const scrollToSection = (id, navigate, pathname) => {
   }
 };
 
-export const downloadResume = () => {
-  if (profile.resumeUrl) {
-    window.open(profile.resumeUrl, "_blank", "noopener");
-  } else {
+export const downloadResume = async () => {
+  if (!profile.resumeUrl) {
     toast("Resume coming soon", {
       description: "Add a link in the data file to enable download.",
     });
+    return;
+  }
+  const filename = "Zeel_Patel_Resume.pdf";
+  try {
+    const res = await fetch(profile.resumeUrl);
+    if (!res.ok) throw new Error("fetch failed");
+    const blob = await res.blob();
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  } catch (e) {
+    const a = document.createElement("a");
+    a.href = profile.resumeUrl;
+    a.download = filename;
+    a.target = "_blank";
+    a.rel = "noopener";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
   }
 };
 
