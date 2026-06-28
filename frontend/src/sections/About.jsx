@@ -12,15 +12,15 @@ export const About = () => (
       {/* Photo / monogram card */}
       <div className="surface flex flex-col items-center gap-4 rounded-3xl p-6 text-center shadow-soft">
         <div
-          className="grid h-40 w-40 place-items-center rounded-3xl text-5xl font-semibold text-white shadow-elevate"
-          style={{
-            background:
-              "linear-gradient(150deg, #0A84FF, #5E5CE6 55%, #AF52DE)",
-          }}
-          aria-label={profile.name}
+          className="h-40 w-40 overflow-hidden rounded-3xl border border-border shadow-elevate"
           data-testid="about-photo"
         >
-          ZP
+          <img
+            src={profile.photo}
+            alt={profile.name}
+            className="h-full w-full object-cover"
+            loading="lazy"
+          />
         </div>
         <div>
           <p className="font-display text-lg font-semibold">{profile.name}</p>

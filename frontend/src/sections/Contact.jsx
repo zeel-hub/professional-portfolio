@@ -1,7 +1,7 @@
 import { Section } from "../components/Section";
 import { profile } from "../data/portfolio";
 import { downloadResume } from "../components/Navbar";
-import { Mail, Linkedin, Github, FileText } from "lucide-react";
+import { Mail, Linkedin, FileText } from "lucide-react";
 
 export const Contact = () => (
   <Section id="contact">
@@ -43,16 +43,6 @@ export const Contact = () => (
         >
           <Linkedin className="h-4 w-4" />
           LinkedIn
-        </a>
-        <a
-          href={profile.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          data-testid="contact-github"
-          className="btn-press inline-flex items-center gap-2 rounded-full border border-border bg-bg-2 px-5 py-3 text-sm font-semibold hover:bg-bg-3"
-        >
-          <Github className="h-4 w-4" />
-          GitHub
         </a>
         <button
           onClick={downloadResume}

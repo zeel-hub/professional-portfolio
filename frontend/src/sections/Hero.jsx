@@ -1,7 +1,6 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { useNavigate, useLocation } from "react-router-dom";
-import { ArrowRight, Github, Linkedin, Mail, MapPin } from "lucide-react";
-import { profile } from "../data/portfolio";
+import { ArrowRight, Linkedin, Mail, MapPin } from "lucide-react";import { profile } from "../data/portfolio";
 import { HeroIllustration } from "../components/HeroIllustration";
 import { scrollToSection, downloadResume } from "../components/Navbar";
 
@@ -74,7 +73,6 @@ export const Hero = () => {
           <motion.div {...m(0.36)} className="mt-8 flex items-center gap-3">
             {[
               { href: profile.linkedin, icon: Linkedin, label: "LinkedIn", id: "linkedin" },
-              { href: profile.github, icon: Github, label: "GitHub", id: "github" },
               { href: `mailto:${profile.email}`, icon: Mail, label: "Email", id: "email" },
             ].map((s) => (
               <a

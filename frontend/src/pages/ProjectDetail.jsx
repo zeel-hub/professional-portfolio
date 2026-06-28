@@ -9,7 +9,6 @@ import {
 import { projectBySlug, projects } from "../data/portfolio";
 import { ProjectPreview } from "../components/ProjectPreview";
 import { TrafficLights } from "../components/TrafficLights";
-import { toast } from "sonner";
 
 const Block = ({ title, children }) => (
   <div className="border-t border-border pt-8">
@@ -53,11 +52,6 @@ export default function ProjectDetail() {
   const idx = projects.findIndex((p) => p.slug === slug);
   const next = projects[(idx + 1) % projects.length];
 
-  const openLink = (url, label) => {
-    if (url) window.open(url, "_blank", "noopener");
-    else toast(`${label} coming soon`, { description: "Link not published yet." });
-  };
-
   return (
     <article className={`mx-auto w-full max-w-4xl px-6 pb-24 pt-32 ${project.accent}`}>
       <button
@@ -81,24 +75,34 @@ export default function ProjectDetail() {
           {project.tagline}
         </p>
 
-        <div className="mt-6 flex flex-wrap gap-3">
-          <button
-            data-testid="project-github"
-            onClick={() => openLink(project.github, "Repository")}
-            className="btn-press inline-flex items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-bg hover:opacity-90"
-          >
-            <Github className="h-4 w-4" />
-            GitHub Repository
-          </button>
-          <button
-            data-testid="project-demo"
-            onClick={() => openLink(project.demo, "Live demo")}
-            className="btn-press inline-flex items-center gap-2 rounded-full border border-border bg-bg-2 px-5 py-2.5 text-sm font-semibold hover:bg-bg-3"
-          >
-            <ExternalLink className="h-4 w-4" />
-            Live Demo
-          </button>
-        </div>
+        {(project.github || project.demo) && (
+          <div className="mt-6 flex flex-wrap gap-3">
+            {project.github && (
+              <a
+                data-testid="project-github"
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-press inline-flex items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-bg hover:opacity-90"
+              >
+                <Github className="h-4 w-4" />
+                GitHub Repository
+              </a>
+            )}
+            {project.demo && (
+              <a
+                data-testid="project-demo"
+                href={project.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-press inline-flex items-center gap-2 rounded-full border border-border bg-bg-2 px-5 py-2.5 text-sm font-semibold hover:bg-bg-3"
+              >
+                <ExternalLink className="h-4 w-4" />
+                Live Demo
+              </a>
+            )}
+          </div>
+        )}
       </motion.header>
 
       {/* hero screenshot window */}

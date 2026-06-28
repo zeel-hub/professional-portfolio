@@ -1,5 +1,4 @@
 // Single source of truth for portfolio content.
-// Placeholder copy — edit freely.
 
 export const profile = {
   name: "Zeel Patel",
@@ -10,15 +9,17 @@ export const profile = {
     "Python Developer",
   ],
   location: "Hamilton, Ontario, Canada",
-  email: "zeel.patel@example.com",
-  linkedin: "https://www.linkedin.com/in/zeelpatel",
-  github: "https://github.com/zeelpatel",
-  resumeUrl: "", // add a URL or /resume.pdf to enable download
+  email: "0210zeel@gmail.com",
+  linkedin: "https://www.linkedin.com/in/zeel-patel-4a19491a7/",
+  photo:
+    "https://customer-assets.emergentagent.com/job_zeel-craft/artifacts/qoi708wr_image.png",
+  resumeUrl:
+    "https://customer-assets.emergentagent.com/job_zeel-craft/artifacts/nt6zmrad_ZeelPatel_Resume_SeniorQE.pdf",
   headline: "I build automation that makes engineering teams faster.",
   subhead:
-    "I design internal engineering tools, automate the workflows that slow teams down, and sharpen QA so quality stops being a bottleneck. I care most about the difficult technical problems behind a clean, reliable system.",
+    "I'm an AI-native Senior Quality Engineer who builds the internal tools that make QA teams faster — not just the test suites. At Evertz I've shipped automation tools now woven into daily QA workflows, from firmware deployment to AI-assisted defect triage.",
   summary:
-    "I'm a Quality Engineer with 3+ years building automation, improving engineering workflows, and creating internal tools that increase developer productivity. I work across Python, automation frameworks, Linux, APIs, networking, SQL, and AI-assisted engineering. Instead of only writing test cases, I prefer solving the underlying engineering problem so it stops happening.",
+    "I'm a Senior Quality Engineer who builds the tools that make QA teams faster, not just the test suites. At Evertz Microsystems I developed four internal automation tools — a JIRA AI triage agent, a lab monitoring dashboard, the TSPLAY web UI, and a firmware upgrade tool — that are now part of daily QA workflows. I work deep in Python automation, ETL and database validation, and shift-left testing, with full-stack instincts across Flask, CI/CD pipelines, and REST API frameworks. I care about automation engineering and AI-assisted quality strategy that creates measurable engineering impact.",
 };
 
 export const philosophy = [
@@ -28,279 +29,317 @@ export const philosophy = [
   },
   {
     title: "Developer productivity is the product",
-    body: "The best test work is invisible: faster feedback, fewer flaky failures, more time for engineers to build.",
+    body: "The best QA work is invisible: faster feedback, fewer flaky failures, more time for engineers to build.",
   },
   {
-    title: "Automate the repetitive",
-    body: "If a human is doing it the same way every week, it belongs in a pipeline with clear logs and clean failures.",
+    title: "Shift left, automate the repetitive",
+    body: "If a human does it the same way every week, it belongs in a script with clear logs and clean failures.",
   },
   {
-    title: "Clean architecture lasts",
-    body: "I value readable systems with obvious seams — code teammates can extend without asking me first.",
+    title: "AI-assisted, human-judged",
+    body: "I lean on AI to remove repetitive analysis, while keeping people in control of the decisions that matter.",
   },
 ];
 
 export const experience = [
   {
     role: "Senior Quality Engineer",
-    company: "Evertz Microsystems",
-    period: "2022 — Present",
+    company: "Evertz Microsystems Ltd.",
+    period: "Jan 2023 — Present",
     location: "Burlington, ON",
     impact: [
-      "Built a firmware upgrade automation tool that cut a multi-hour manual procedure to a one-click, repeatable run across device fleets.",
-      "Designed an API test-generation framework that produces coverage from live specs, removing days of hand-written boilerplate per release.",
-      "Shipped a JIRA AI triage agent that auto-categorizes and routes incoming defects, reducing time-to-owner for new tickets.",
-      "Stood up device health monitoring that surfaces failures before QA cycles, turning late-stage surprises into early signals.",
+      "Built four internal automation tools — a JIRA AI triage agent, a lab monitoring dashboard, the TSPLAY web UI, and a firmware upgrade tool — now embedded in daily QA workflows.",
+      "Created and executed comprehensive test cases, scripts, and validation strategies derived from business requirements and user stories.",
+      "Performed database validation with SQL alongside end-to-end, system-level testing across firmware and software components.",
+      "Conducted deep debugging using Unix/Linux CLI tools, log analysis, and packet-level troubleshooting to verify data integrity and system behavior.",
+      "Led regression testing cycles ensuring product stability across releases, integrated with Jenkins and GitHub CI/CD pipelines.",
     ],
   },
   {
-    role: "Software Test Engineer",
-    company: "Earlier Roles",
-    period: "2021 — 2022",
-    location: "Ontario, Canada",
+    role: "Student Product Verification Specialist (Co-op)",
+    company: "Evertz Microsystems Ltd.",
+    period: "Jul 2021 — Dec 2021",
+    location: "Burlington, ON",
     impact: [
-      "Replaced brittle UI checks with stable API-level suites, dropping flaky failures and speeding up CI feedback.",
-      "Introduced reusable Python test utilities adopted across teams to standardize setup and reporting.",
+      "Verified product functionality across firmware and software, documenting defects with clear reproduction steps.",
+      "Supported QA cycles with hands-on lab testing and log analysis, building the foundation for later automation work.",
+    ],
+  },
+  {
+    role: "WordPress Developer (Internship)",
+    company: "Payd App",
+    period: "Jan 2022 — Apr 2022",
+    location: "Remote",
+    impact: [
+      "Built and maintained WordPress solutions, customizing functionality and layouts to match business requirements.",
+      "Applied responsive design across desktop and mobile, and improved performance, navigation, and SEO fundamentals.",
+    ],
+  },
+  {
+    role: "Math Peer Tutor",
+    company: "Mohawk College",
+    period: "Sep 2021 — Dec 2022",
+    location: "Hamilton, ON",
+    impact: [
+      "Delivered one-on-one and group tutoring in mathematics and problem-solving, simplifying complex concepts.",
+      "Helped students strengthen analytical thinking and exam preparation, improving academic outcomes through structured mentoring.",
     ],
   },
 ];
 
 export const skillGroups = [
-  { title: "Programming", items: ["Python", "JavaScript", "Bash", "SQL", "TypeScript"] },
-  { title: "Automation", items: ["Pytest", "Selenium", "Playwright", "Requests", "CI/CD pipelines"] },
-  { title: "Testing", items: ["API testing", "Integration testing", "Test design", "Regression suites", "Test reporting"] },
-  { title: "Databases", items: ["PostgreSQL", "MySQL", "SQLite", "MongoDB"] },
-  { title: "Networking", items: ["TCP/IP", "HTTP/REST", "SSH", "Packet analysis"] },
-  { title: "Operating Systems", items: ["Linux", "macOS", "Shell scripting"] },
-  { title: "DevOps", items: ["Git", "Docker", "GitHub Actions", "Jenkins"] },
-  { title: "AI", items: ["LLM agents", "AI-assisted triage", "Prompt engineering", "RAG basics"] },
+  { title: "Programming", items: ["Python", "JavaScript", "Node.js", "React", "SQL"] },
+  { title: "Automation", items: ["Selenium", "Robot Framework", "Katalon Recorder", "Pandas", "QA Workflow Automation"] },
+  { title: "Testing", items: ["Functional", "Regression", "System & Integration", "ETL / Database", "Black-box / White-box", "Agile · SDLC · STLC"] },
+  { title: "Databases", items: ["MySQL", "MS SQL Server (SSMS)", "MS Access"] },
+  { title: "Networking", items: ["IP / TCP / UDP", "Transport Streams", "Wireshark", "Log Debugging"] },
+  { title: "Operating Systems", items: ["Linux CLI", "Windows", "NGINX", "Gunicorn"] },
+  { title: "DevOps", items: ["Git", "GitHub", "Bitbucket", "Jenkins", "JIRA", "QTest / TestRail"] },
+  { title: "AI", items: ["Microsoft Glean", "GitHub Copilot", "Cursor", "Prompt Engineering"] },
 ];
 
 export const education = [
   {
     school: "McMaster University",
-    degree: "Bachelor of Technology",
+    degree: "Bachelor of Technology (BTech)",
     field: "Software Engineering Technology",
+    period: "May 2025 — Present",
     accent: "accent-blue",
   },
   {
     school: "Mohawk College",
-    degree: "Diploma",
-    field: "Software Development",
+    degree: "Computer System Technician — Software Development",
+    field: "GPA 86.7% · Software Development",
+    period: "Jan 2020 — Dec 2022",
     accent: "accent-mint",
   },
 ];
 
 export const projects = [
   {
-    slug: "tsplay-web-interface",
-    name: "TSPLAY Web Interface",
-    icon: "Play",
-    accent: "accent-blue",
-    tagline: "A clean web control surface for transport-stream playback and device orchestration.",
-    stack: ["Python", "FastAPI", "React", "WebSockets", "Linux"],
-    github: "https://github.com/zeelpatel",
-    demo: "",
-    overview:
-      "TSPLAY replaced a fragile set of command-line steps with a focused web interface engineers actually enjoy using to drive playback hardware.",
-    problem:
-      "Operating the playback devices meant memorizing CLI flags and SSHing into machines. Onboarding was slow, mistakes were common, and there was no shared view of device state.",
-    solution:
-      "A single web app exposes every common action as a clear control, streams live device status over WebSockets, and validates inputs before anything touches hardware.",
-    architecture: [
-      "FastAPI service wraps the device control layer behind a typed REST + WebSocket API.",
-      "React front end renders real-time state; optimistic UI keeps interactions instant.",
-      "A thin adapter isolates hardware specifics so new device models plug in without UI changes.",
-    ],
-    challenges: [
-      "Keeping the UI truthful when hardware responds slowly — solved with explicit pending and error states.",
-      "Designing an API that hides device quirks without leaking complexity to the front end.",
-    ],
-    decisions: [
-      "Chose WebSockets over polling so status feels live without hammering the device.",
-      "Pushed all validation server-side so the UI can stay thin and trustworthy.",
-    ],
-    lessons:
-      "A good internal tool wins adoption through clarity, not features. Removing CLI memorization mattered more than any single capability.",
-    future: [
-      "Role-based access for shared lab environments.",
-      "Saved playback presets per engineer.",
-    ],
-  },
-  {
-    slug: "firmware-upgrade-automation",
-    name: "Firmware Upgrade Automation Tool",
+    slug: "firmware-device-management",
+    name: "Advanced Firmware & Device Management Tool",
     icon: "CircuitBoard",
     accent: "accent-indigo",
-    tagline: "One-click, repeatable firmware upgrades across an entire device fleet.",
-    stack: ["Python", "Paramiko", "AsyncIO", "Linux", "SQLite"],
-    github: "https://github.com/zeelpatel",
-    demo: "",
+    tagline:
+      "A Python desktop app that automates firmware deployment and hardware inventory across device fleets.",
+    stack: ["Python", "Linux", "SSH", "Concurrency", "Tkinter", "JSON"],
     overview:
-      "A tool that turns a tense, multi-hour manual upgrade into a monitored, repeatable run that anyone on the team can trigger safely.",
+      "A Python-based desktop application that automates firmware deployment and hardware inventory collection across many devices in engineering test environments — cutting manual effort and standardizing a previously fragile process.",
     problem:
-      "Firmware upgrades were performed by hand, device by device. The process was slow, error-prone, and risky — a missed step could brick hardware.",
+      "Firmware updates and inventory checks were performed device by device, by hand. The process was slow, inconsistent, and easy to get wrong across a large lab fleet.",
     solution:
-      "Automate the full upgrade sequence with pre-flight checks, parallel execution across devices, live progress, and automatic rollback on failure.",
+      "A centralized graphical tool deploys firmware to many devices in parallel, validates each device before deployment, and collects a full hardware/software inventory — all with live logging and exportable reports.",
     architecture: [
-      "AsyncIO orchestrator runs upgrades concurrently with per-device isolation.",
-      "Paramiko handles secure transport; each step is idempotent and logged.",
-      "SQLite stores run history so every upgrade is auditable after the fact.",
+      "Centralized GUI orchestrates parallel firmware upgrades across multiple devices.",
+      "Secure remote management over SSH; pre-deployment checks validate OS and connectivity.",
+      "Inventory collection captures firmware version, OS, CPU, memory, storage, BIOS, IPMI, and network interfaces.",
+      "Real-time logging with JSON export for reporting, auditing, and analysis.",
     ],
     challenges: [
-      "Safely parallelizing operations on physical hardware without overwhelming the network.",
-      "Designing rollback that is trustworthy enough for engineers to rely on it under pressure.",
+      "Safely parallelizing operations against physical hardware without overwhelming the network.",
+      "Designing validation that catches bad targets before any firmware is written.",
     ],
     decisions: [
-      "Made every step idempotent so a retry never leaves a device half-upgraded.",
-      "Treated logs as a first-class feature — a failed run should explain itself.",
+      "Validated connectivity and OS state before deployment so failures surface early, not mid-flash.",
+      "Treated logs and JSON exports as first-class features for auditability.",
     ],
     lessons:
-      "Automation earns trust through observability. Engineers adopted it only once failures were as clear as successes.",
+      "Reliability and visibility earn adoption. Engineers trusted the tool once every run explained itself clearly.",
     future: [
-      "Scheduled maintenance windows.",
-      "Slack notifications on run completion.",
+      "Scheduled maintenance windows for unattended upgrades.",
+      "Role-based access for shared lab environments.",
     ],
   },
   {
-    slug: "jira-ai-triage-agent",
-    name: "JIRA AI Triage Agent",
-    icon: "Bot",
-    accent: "accent-lavender",
-    tagline: "An LLM agent that reads, categorizes, and routes incoming defects automatically.",
-    stack: ["Python", "LLM APIs", "JIRA API", "FastAPI", "RAG"],
-    github: "https://github.com/zeelpatel",
-    demo: "",
+    slug: "device-health-monitor",
+    name: "Devices Health Monitor",
+    icon: "Activity",
+    accent: "accent-blue",
+    tagline:
+      "Centralized, real-time visibility into the health and performance of engineering test systems.",
+    stack: ["Python", "Linux", "System Metrics", "Dashboards", "Log Analysis"],
     overview:
-      "An assistant that triages new tickets the moment they arrive — labeling, prioritizing, and routing them to the right owner.",
+      "A centralized monitoring application that gives QA and engineering teams real-time visibility into lab infrastructure through a single, intuitive dashboard.",
     problem:
-      "New defects sat in a queue until someone manually read, labeled, and assigned them. Time-to-owner was slow and inconsistent.",
+      "Health checks across test servers were manual and scattered. Problems were often noticed late, slowing troubleshooting and wasting QA cycles.",
     solution:
-      "An agent watches the intake queue, uses an LLM grounded in past tickets to classify and prioritize, then applies labels and suggests an owner.",
+      "Continuously monitor CPU, memory, and GPU utilization across systems, track uptime and history, and surface system logs — all in one dashboard built for fast diagnosis.",
     architecture: [
-      "FastAPI webhook receives new-issue events from JIRA.",
-      "Retrieval over historical tickets grounds the model and reduces hallucination.",
-      "All actions are suggestions a human can accept — the agent never closes tickets on its own.",
+      "Automated collection of CPU, memory, and GPU metrics across multiple systems.",
+      "Device uptime tracking with historical status monitoring.",
+      "Centralized dashboard showing the operational state of many test servers at once.",
+      "Integrated system log monitoring to assist fault diagnosis and root-cause analysis.",
     ],
     challenges: [
-      "Keeping classifications consistent as product areas evolve.",
-      "Drawing a clear line between automation and human judgment.",
+      "Choosing meaningful thresholds that catch real issues without alert fatigue.",
+      "Keeping the monitoring footprint light so it never affects test results.",
     ],
     decisions: [
-      "Kept a human in the loop for assignment to build trust before increasing autonomy.",
-      "Grounded the model with retrieval instead of relying on a generic prompt.",
+      "Designed a single-pane dashboard so anyone can read fleet health at a glance.",
+      "Combined live metrics with log context to speed up root-cause analysis.",
     ],
     lessons:
-      "AI features land best as confident suggestions, not silent automation. Transparency made the team comfortable letting it do more.",
+      "The value of monitoring is in the signals teams actually act on — clarity beat coverage.",
     future: [
-      "Confidence scores surfaced inline.",
-      "Auto-detection of duplicate tickets.",
+      "Trend-based anomaly detection.",
+      "Proactive alerts ahead of failures.",
     ],
   },
   {
-    slug: "api-test-generation-framework",
-    name: "API Test Generation Framework",
-    icon: "FlaskConical",
+    slug: "tsplay-stream-portal",
+    name: "TSPLAY Stream Management Portal",
+    icon: "Play",
     accent: "accent-mint",
-    tagline: "Generates living API test suites from specifications, killing hand-written boilerplate.",
-    stack: ["Python", "Pytest", "OpenAPI", "Requests", "CI/CD"],
-    github: "https://github.com/zeelpatel",
-    demo: "",
+    tagline:
+      "An internal web app that turns MPEG transport-stream management into point-and-click instead of SSH.",
+    stack: ["Python", "Flask", "Linux", "NGINX", "Gunicorn", "JavaScript"],
     overview:
-      "A framework that reads an API specification and produces a structured, runnable test suite — coverage that stays in sync with the contract.",
+      "An internal web application that simplifies transport-stream (TS) management and testing for engineering and QA teams — replacing command-line workflows with a clean, centralized interface.",
     problem:
-      "API tests were written by hand for every endpoint. They lagged behind the spec, missed edge cases, and consumed days each release.",
+      "Managing MPEG transport streams meant repetitive SSH sessions and command-line steps. It was slow to learn, error-prone, and offered no shared view of active streams.",
     solution:
-      "Parse the OpenAPI spec, generate parameterized Pytest cases for each operation, and wire them into CI so coverage tracks the contract automatically.",
+      "A web interface to launch and stop streams, monitor active streams in real time, discover and filter streams across storage, and import/export configurations via CSV for backup and recovery.",
     architecture: [
-      "Spec parser maps each operation to typed request/response expectations.",
-      "Pytest generators emit readable, parameterized tests engineers can extend.",
-      "CI integration fails fast when the implementation drifts from the spec.",
+      "Flask backend wraps TSPLAY operations behind a clean web API, served via Gunicorn and NGINX.",
+      "Real-time monitoring of active streams: multicast addresses, ports, and process info.",
+      "Stream discovery and filtering to locate transport streams across directories.",
+      "CSV import/export for stream backup, migration, and recovery.",
     ],
     challenges: [
-      "Generating tests readable enough that engineers trust and edit them.",
-      "Handling auth and stateful flows that a pure spec doesn't describe.",
+      "Presenting live stream state accurately without leaking command-line complexity.",
+      "Designing import/export robust enough for real backup and recovery.",
     ],
     decisions: [
-      "Generated human-friendly tests, not opaque ones — output is meant to be read.",
-      "Made generated and hand-written tests coexist cleanly in one suite.",
+      "Centralized common TSPLAY operations to remove repetitive SSH interactions.",
+      "Prioritized a user-friendly interface to make stream testing consistent across the team.",
     ],
     lessons:
-      "Generation is only useful if the output respects the people who maintain it. Readability drove adoption.",
+      "A good internal tool wins adoption through clarity. Removing CLI memorization mattered most.",
+    future: [
+      "Saved stream presets per engineer.",
+      "Role-based access for shared labs.",
+    ],
+  },
+  {
+    slug: "api-test-framework",
+    name: "API Test Generation & Execution Framework",
+    icon: "FlaskConical",
+    accent: "accent-lavender",
+    tagline:
+      "Scripts that automatically generate and run API test cases to expand coverage and speed up regression.",
+    stack: ["Python", "REST APIs", "Automation", "CI/CD", "Pytest"],
+    overview:
+      "A framework that automatically generates and executes API test cases, expanding coverage and enabling consistent validation across different system configurations.",
+    problem:
+      "API tests were written by hand for each endpoint and configuration. Coverage lagged, edge cases were missed, and regression cycles were slow.",
+    solution:
+      "Develop scripts that generate and execute API test cases automatically, integrated into QA workflows to support regression testing and faster defect identification.",
+    architecture: [
+      "Automated generation of API test cases to broaden coverage.",
+      "Consistent validation of system behavior across different configurations.",
+      "Integration into QA workflows for regression testing and faster defect identification.",
+    ],
+    challenges: [
+      "Generating tests readable and maintainable enough for the team to trust and extend.",
+      "Handling auth and stateful flows beyond a simple endpoint contract.",
+    ],
+    decisions: [
+      "Focused on consistency across configurations to make regression results comparable.",
+      "Wired generation into existing QA workflows rather than a separate, ignored step.",
+    ],
+    lessons:
+      "Generation only helps if the output respects the people who maintain it — readability drove adoption.",
     future: [
       "Contract-diffing to flag breaking changes in PRs.",
       "Schema-aware fuzzing for edge cases.",
     ],
   },
   {
-    slug: "device-health-monitoring",
-    name: "Device Health Monitoring Tool",
-    icon: "Activity",
-    accent: "accent-blue",
-    tagline: "Surfaces hardware failures before they reach a QA cycle.",
-    stack: ["Python", "Prometheus", "Grafana", "Linux", "PostgreSQL"],
-    github: "https://github.com/zeelpatel",
-    demo: "",
+    slug: "jira-ai-triage",
+    name: "JIRA AI Triage Assistant",
+    icon: "Bot",
+    accent: "accent-lavender",
+    tagline:
+      "A Generative-AI assistant that analyzes, summarizes, and triages JIRA defects for QA teams.",
+    stack: ["Python", "Generative AI", "Microsoft Glean", "JIRA", "REST APIs", "Prompt Engineering"],
     overview:
-      "Continuous monitoring that turns late-stage hardware surprises into early, actionable signals.",
+      "An AI-powered JIRA triage assistant that reduces the manual effort of analyzing and categorizing defects. It uses Generative AI through Microsoft Glean to interpret issue descriptions and help QA engineers produce consistent, high-quality bug reports.",
     problem:
-      "Device failures were often discovered mid-QA, wasting cycles and forcing reruns. There was no early warning.",
+      "Incoming defects had to be read, summarized, prioritized, and routed by hand. This was repetitive, inconsistent, and pulled engineers away from real investigation.",
     solution:
-      "Collect health metrics continuously, define meaningful thresholds, and alert on degradation trends before a full failure occurs.",
+      "The assistant analyzes new JIRA issues with AI: it summarizes descriptions, suggests severity and priority, recommends components for routing, flags missing information, and drafts standardized acceptance criteria and reproduction steps.",
     architecture: [
-      "Lightweight Python agents export metrics to Prometheus.",
-      "Grafana dashboards give engineers a shared, glanceable view of fleet health.",
-      "PostgreSQL retains history for trend analysis and post-incident review.",
+      "JIRA integrated with Microsoft Glean AI services through Python modules over REST APIs.",
+      "Engineered prompts produce reliable, structured JSON outputs.",
+      "End-to-end automation workflow designed to be maintainable and scalable for QA.",
     ],
     challenges: [
-      "Choosing thresholds that catch real problems without alert fatigue.",
-      "Keeping agents lightweight so monitoring never affects test results.",
+      "Engineering prompts that yield reliable, structured output across varied defect reports.",
+      "Keeping categorization consistent while leaving final judgment to engineers.",
     ],
     decisions: [
-      "Alerted on trends, not just thresholds, to catch slow degradation.",
-      "Made dashboards readable at a glance for non-specialists.",
+      "Generated suggestions, not silent automation, so engineers stay in control.",
+      "Standardized acceptance criteria and reproduction steps to improve report quality.",
     ],
     lessons:
-      "The value of monitoring is in the signals you act on. Tuning out noise was as important as adding coverage.",
+      "AI lands best as confident, transparent assistance — it freed engineers to investigate instead of administer.",
     future: [
-      "Anomaly detection on metric trends.",
-      "Predictive maintenance scheduling.",
+      "Confidence scores surfaced inline.",
+      "Automatic duplicate-defect detection.",
     ],
   },
+];
+
+// Lighter web/coursework projects with live demos.
+export const webProjects = [
   {
-    slug: "portfolio-website",
-    name: "Portfolio Website",
-    icon: "AppWindow",
+    name: "Sandy & Leslie Apartment",
+    icon: "Building2",
+    accent: "accent-blue",
+    tagline: "A polished apartment showcase site.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    demo: "https://zeel-hub.github.io/sandyAndLeslieApartment/",
+  },
+  {
+    name: "Employee Registry Form",
+    icon: "ClipboardList",
     accent: "accent-indigo",
-    tagline: "This site — a macOS-inspired portfolio built with care for detail.",
-    stack: ["React", "Tailwind CSS", "Framer Motion", "Lucide", "React Router"],
-    github: "https://github.com/zeelpatel",
-    demo: "",
-    overview:
-      "A personal portfolio designed to feel like a native macOS application rather than a template — calm, deliberate, and polished.",
-    problem:
-      "Most engineering portfolios read like resumes. I wanted something that demonstrates taste and craftsmanship as evidence of how I build.",
-    solution:
-      "A design system first — color, type, spacing, motion — then a restrained interface with glass navigation, floating window cards, and a Cmd+K command palette.",
-    architecture: [
-      "Token-driven theming for instant, smooth light/dark switching.",
-      "Section components fade in on view; motion respects reduced-motion preferences.",
-      "A command palette mirrors macOS Spotlight for keyboard-first navigation.",
-    ],
-    challenges: [
-      "Restraint — deciding what to remove so every element keeps its purpose.",
-      "Getting glass, depth, and motion to feel native without becoming flashy.",
-    ],
-    decisions: [
-      "Built custom illustrations and mock UIs instead of stock photos for consistency.",
-      "Kept animations subtle and purposeful — no bounce, no spin.",
-    ],
-    lessons:
-      "Elegance comes from restraint. Every time I removed an element, the page got better.",
-    future: [
-      "MDX-powered case studies.",
-      "Per-project live demos.",
-    ],
+    tagline: "A validated employee registration form.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    demo: "https://zeel-hub.github.io/employeeRegisteryForm/",
+  },
+  {
+    name: "Mohawk College Website",
+    icon: "GraduationCap",
+    accent: "accent-mint",
+    tagline: "A multi-page college website concept.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    demo: "https://zeel-hub.github.io/demoMohawkCollegeWebsite/",
+  },
+  {
+    name: "Dice Game",
+    icon: "Dices",
+    accent: "accent-lavender",
+    tagline: "A playful browser dice game.",
+    stack: ["JavaScript", "HTML", "CSS"],
+    demo: "https://zeel-hub.github.io/diceGame/",
+  },
+  {
+    name: "Bing Map Application",
+    icon: "Map",
+    accent: "accent-blue",
+    tagline: "A maps explorer built on the Bing Maps API.",
+    stack: ["JavaScript", "Bing Maps API"],
+    demo: "https://zeel-hub.github.io/bingMapApplication/",
+  },
+  {
+    name: "Tourist App",
+    icon: "Plane",
+    accent: "accent-indigo",
+    tagline: "A destination explorer for travellers.",
+    stack: ["JavaScript", "HTML", "CSS"],
+    demo: "https://zeel-hub.github.io/touristApp/",
   },
 ];
 

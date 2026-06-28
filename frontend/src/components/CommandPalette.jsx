@@ -20,7 +20,6 @@ import {
   Sun,
   Moon,
   FileText,
-  Github,
   Linkedin,
   AppWindow,
 } from "lucide-react";
@@ -91,13 +90,6 @@ export const CommandPalette = ({ open, setOpen }) => {
           <CommandItem data-testid="command-resume" onSelect={() => run(downloadResume)}>
             <FileText className="mr-2 h-4 w-4" />
             Download resume
-          </CommandItem>
-          <CommandItem
-            data-testid="command-github"
-            onSelect={() => run(() => window.open(profile.github, "_blank", "noopener"))}
-          >
-            <Github className="mr-2 h-4 w-4" />
-            Open GitHub
           </CommandItem>
           <CommandItem
             data-testid="command-linkedin"

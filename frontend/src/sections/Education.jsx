@@ -23,6 +23,7 @@ export const Education = () => (
           <h3 className="mt-5 font-display text-xl font-semibold">{e.school}</h3>
           <p className="mt-1 text-ink-2">{e.degree}</p>
           <p className="text-ink-3">{e.field}</p>
+          <p className="mt-2 text-sm text-ink-3">{e.period}</p>
         </div>
       ))}
     </div>

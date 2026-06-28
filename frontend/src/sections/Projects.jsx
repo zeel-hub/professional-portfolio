@@ -2,9 +2,10 @@ import { motion, useReducedMotion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import { Section, SectionLabel, SectionTitle } from "../components/Section";
-import { projects } from "../data/portfolio";
+import { projects, webProjects } from "../data/portfolio";
 import { ProjectPreview } from "../components/ProjectPreview";
 import { TrafficLights } from "../components/TrafficLights";
+import { WebProjectCard } from "../components/WebProjectCard";
 
 export const Projects = () => {
   const navigate = useNavigate();
@@ -67,6 +68,20 @@ export const Projects = () => {
             </div>
           </motion.button>
         ))}
+      </div>
+
+      <div className="mt-20">
+        <h3 className="font-display text-xl font-semibold tracking-tight sm:text-2xl">
+          Web &amp; coursework
+        </h3>
+        <p className="mt-2 max-w-prose text-ink-2">
+          A few front-end builds — each one is live, click through to try it.
+        </p>
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {webProjects.map((p, i) => (
+            <WebProjectCard key={p.demo} project={p} index={i} />
+          ))}
+        </div>
       </div>
     </Section>
   );
