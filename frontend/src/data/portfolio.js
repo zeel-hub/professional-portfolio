@@ -8,7 +8,7 @@ export const profile = {
     "Software Test Engineer",
     "Python Developer",
   ],
-  location: "Hamilton, Ontario, Canada",
+  location: "Ontario, Canada",
   email: "0210zeel@gmail.com",
   linkedin: "https://www.linkedin.com/in/zeel-patel-4a19491a7/",
   photo:
