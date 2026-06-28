@@ -14,8 +14,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/zeel-patel-4a19491a7/",
   photo:
     "https://customer-assets.emergentagent.com/job_zeel-craft/artifacts/wpajg5rg_image.png",
-  resumeUrl:
-    "https://customer-assets.emergentagent.com/job_zeel-craft/artifacts/nt6zmrad_ZeelPatel_Resume_SeniorQE.pdf",
+  resumeUrl: "/Zeel_Patel_Resume.pdf",
   headline: "I build automation that makes engineering teams faster.",
   subhead:
     "I'm an AI-native Quality Engineer who builds the internal tools that make QA teams faster — not just the test suites. At Evertz I've shipped automation tools now woven into daily QA workflows, from firmware deployment to AI-assisted defect triage.",
