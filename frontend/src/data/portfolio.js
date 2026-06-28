@@ -278,6 +278,9 @@ export const projects = [
     tagline:
       "A Generative-AI assistant that analyzes, summarizes, and triages JIRA defects for QA teams.",
     stack: ["Python", "Generative AI", "Microsoft Glean", "JIRA", "REST APIs", "Prompt Engineering"],
+    screenshots: [
+      "https://customer-assets.emergentagent.com/job_zeel-craft/artifacts/1c51z4kt_image.png",
+    ],
     overview:
       "An AI-powered JIRA triage assistant that reduces the manual effort of analyzing and categorizing defects. It uses Generative AI through Microsoft Glean to interpret issue descriptions and help QA engineers produce consistent, high-quality bug reports.",
     problem:
